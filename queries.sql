@@ -37,13 +37,12 @@ GROUP BY ms.station_name
 HAVING item_count > 1
 ORDER BY item_count DESC;
 
--- Finds items that are categorized as "Vegan" but specifically do not contain "Soy" or "Gluten" in their allergen tags.
+-- Finds items that are categorized as "Vegan" but specifically do not contain "Soy" in their allergen tags.
 SELECT mi.name, mi.allergen_tags, mc.category_name
 FROM MenuItem mi
 JOIN MenuCategory mc ON mi.category_id = mc.category_id
 WHERE (mc.category_name LIKE '%Vegan%' OR mi.allergen_tags LIKE '%Vegan%')
   AND mi.allergen_tags NOT LIKE '%Soy%'
-  AND mi.allergen_tags NOT LIKE '%Gluten%';
 
 -- Ranks each food item by calorie count within its specific category and label it as "High" or "Low" calorie relative to a 400-calorie threshold.
 SELECT 
