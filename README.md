@@ -19,6 +19,6 @@ Tasks
 
 - [#6](./test-data.sql) Populate the tables with test data.
 
-- [#7](./queries.sql) Define and execute at least five queries that show your database.
+- [#7](./queries) Define and execute at least five queries that show your database.
 
 - #8 Create a basic application that let's you create, display, modify and delete at least two of the tables with a foreign key between then. (This will be in a seperate repository)
