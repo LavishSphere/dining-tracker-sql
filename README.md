@@ -3,6 +3,8 @@
 
 ### By: Ashsmith Khayrul & Tuna Baris Ercan
 
+The database file can be found in [nutrition-tracker.db](./nutrition-tracker.db)
+
 Tasks
 
 - [#1](./requirements.pdf) Describe the requirements of the problem with a simple document that lists the rules of the database in the problem domain language. Then from that list of rules and notes highlight the list of possible nouns and actions you identified.
